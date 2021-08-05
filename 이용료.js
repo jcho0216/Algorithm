@@ -12,10 +12,6 @@ function solution(price, money, count) {
     for(let i = 1; i <= count; i++) {
         sum += price * i;
     }
-    
-    if(sum <= money) {
-        return 0;
-    } else {
-        return sum - money;
-    }
+        
+    return sum <= money ? 0 : sum - money
 }
